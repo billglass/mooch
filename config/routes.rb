@@ -1,11 +1,72 @@
 Rails.application.routes.draw do
-  get 'users/title'
+  
+  
+  root 'users#new' 
+  resources :users, :events,:comments
 
-  get 'users/body'
 
-  get 'users/location'
 
-  get 'users/incentive'
+  # get 'sessions/new'
+
+  # get 'sessions/create'
+
+  # get 'sessions/destroy'
+
+  # get 'comments/new'
+
+  # get 'comments/create'
+
+  # get 'comments/index'
+
+  # get 'comments/show'
+
+  # get 'comments/edit'
+
+  # get 'comments/update'
+
+  # get 'comments/delete'
+
+  # get 'comments/destroy'
+
+  # get 'events/new'
+
+  # get 'events/create'
+
+  # get 'events/index'
+
+  # get 'events/show'
+
+  # get 'events/edit'
+
+  # get 'events/update'
+
+  # get 'events/delete'
+
+  # get 'events/destroy'
+
+  # # get 'users/new'
+
+  # get 'users/create'
+
+  # get 'users/index'
+
+  # get 'users/show'
+
+  # get 'users/edit'
+
+  # get 'users/update'
+
+  # get 'users/delete'
+
+  # get 'users/destroy'
+
+  # get 'users/title'
+
+  # get 'users/body'
+
+  # get 'users/location'
+
+  # get 'users/incentive'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
