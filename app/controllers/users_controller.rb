@@ -1,13 +1,34 @@
 class UsersController < ApplicationController
-  def title
+  def new
+    @user = User.new
   end
 
-  def body
+  def create
+    @user = User.new(params[:user])
+     if @user.save 
+      redirect_to '/', notice:"You have successfully signed up!"
+    else
+      flash[:alert]="Sorry there has been an error"
+      render :new
+     end 
+
   end
 
-  def location
+  def index
   end
 
-  def incentive
+  def show
+  end
+
+  def edit
+  end
+
+  def update
+  end
+
+  def delete
+  end
+
+  def destroy
   end
 end
