@@ -7,6 +7,14 @@ Rails.application.routes.draw do
 
   get 'users/incentive'
 
+  get 'users/title'
+
+  get 'users/body'
+
+  get 'users/location'
+
+  get 'users/incentive'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
