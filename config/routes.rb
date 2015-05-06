@@ -1,19 +1,82 @@
 Rails.application.routes.draw do
-  get 'users/title'
 
-  get 'users/body'
+get '/login', to: 'sessions#new'
+post '/login', to: 'sessions#create'
+delete '/logout', to: 'sessions#destroy'
 
-  get 'users/location'
+root 'users#new'
 
-  get 'users/incentive'
+resources :users, :events, :comments
 
-  get 'users/title'
+  # get 'sessions/new'
 
-  get 'users/body'
+  # get 'sessions/create'
 
-  get 'users/location'
+  # get 'sessions/destroy'
 
-  get 'users/incentive'
+  # get 'comments/new'
+
+  # get 'comments/create'
+
+  # get 'comments/index'
+
+  # get 'comments/show'
+
+  # get 'comments/edit'
+
+  # get 'comments/update'
+
+  # get 'comments/delete'
+
+  # get 'comments/destroy'
+
+  # get 'events/new'
+
+  # get 'events/create'
+
+  # get 'events/index'
+
+  # get 'events/show'
+
+  # get 'events/edit'
+
+  # get 'events/update'
+
+  # get 'events/delete'
+
+  # get 'events/destroy'
+
+  # get 'users/new'
+
+  # get 'users/create'
+
+  # get 'users/index'
+
+  # get 'users/show'
+
+  # get 'users/edit'
+
+  # get 'users/update'
+
+  # get 'users/delete'
+
+  # get 'users/destroy'
+
+  # get 'users/title'
+
+  # get 'users/body'
+
+  # get 'users/location'
+
+  # get 'users/incentive'
+
+  # get 'users/title'
+
+  # get 'users/body'
+
+  # get 'users/location'
+
+  # get 'users/incentive'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
