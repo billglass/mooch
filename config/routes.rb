@@ -8,6 +8,13 @@ root 'users#new'
 
 resources :users, :events, :comments
 
+  
+  
+  root 'users#new' 
+  resources :users, :events,:comments
+
+
+
   # get 'sessions/new'
 
   # get 'sessions/create'
@@ -46,8 +53,6 @@ resources :users, :events, :comments
 
   # get 'events/destroy'
 
-  # get 'users/new'
-
   # get 'users/create'
 
   # get 'users/index'
@@ -61,14 +66,6 @@ resources :users, :events, :comments
   # get 'users/delete'
 
   # get 'users/destroy'
-
-  # get 'users/title'
-
-  # get 'users/body'
-
-  # get 'users/location'
-
-  # get 'users/incentive'
 
   # get 'users/title'
 
