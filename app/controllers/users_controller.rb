@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
      if @user.save 
-      redirect_to '/', notice:"You have successfully signed up!"
+      redirect_to @user, notice:"You have successfully signed up!"
     else
       flash[:alert]="Sorry there has been an error"
       render :new
@@ -15,6 +15,7 @@ class UsersController < ApplicationController
   end
 
   def index
+    "this is awesome!!!"
   end
 
   def show
