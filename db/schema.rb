@@ -11,11 +11,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20150506183433) do
-=======
+
 ActiveRecord::Schema.define(version: 20150506193533) do
->>>>>>> b603bf5f8b8d77c03d9ee9471d4610f66635841c
 
   create_table "comments", force: :cascade do |t|
     t.string   "body"
@@ -33,16 +30,10 @@ ActiveRecord::Schema.define(version: 20150506193533) do
   end
 
   create_table "users", force: :cascade do |t|
-<<<<<<< HEAD
-    t.string   "title"
-    t.string   "body"
-    t.string   "location"
-    t.string   "incentive"
-=======
+
     t.string   "name"
     t.string   "email"
     t.string   "password"
->>>>>>> b603bf5f8b8d77c03d9ee9471d4610f66635841c
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
